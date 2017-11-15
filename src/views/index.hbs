@@ -1,0 +1,26 @@
+<html>
+
+<head></head>
+
+<body>
+    <h1>{{title}}</h1>
+    <p>{{body}}</p>
+
+    {{#each list}}
+    <ul>
+        <li>{{@index}}. {{this}}</li>
+    </ul>
+    {{/each}}
+    </br>
+    {{{htmlTag}}} 
+    {{#if user.admin}}
+        <button class="launch">Launch Spacecraft</button> {{else}}
+        <button class="login"> Log in</button> {{/if}} 
+    {{else}}
+        <p>Nothing here!</p>
+    {{/if}}
+    
+    {{!-- This is a comment --}}
+</body>
+
+</html>
